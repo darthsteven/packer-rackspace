@@ -1,8 +1,11 @@
-# Packer Rackspace docker
+# Packer Rackspace
 
-Used to rebuild a Rackspace image to run Docker.
+* My Rackspace packer.io images
 
 Usage:
+
+
+* Rackspace docker builder:
 
 ```
 export SDK_USERNAME="username"
