@@ -1,0 +1,25 @@
+{
+  "builders":
+  [
+  {
+    "type": "openstack",
+    "username": "",
+    "password": "",
+    "provider": "rackspace-us",
+    "region": "ORD",
+    "ssh_username": "root",
+    "image_name": "packer-docker-wheezy",
+    "source_image": "857d7d36-34f3-409f-8435-693e8797be8b",
+    "flavor": "performance1-1"
+  }
+   ],
+	"provisioners": [
+	 {
+		"type": "shell",
+		"scripts": [ 
+			"scripts/extras.sh",
+			"scripts/docker.sh"
+		]
+	 }
+	]
+}
